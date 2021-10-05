@@ -1,6 +1,6 @@
 # Zebrafish-VDJ-analysis
 
-Code and tutorial for the analysis of V(D)J recombination in the zebrafish, using RNA-Seq data and the [MIXCR tool](https://mixcr.readthedocs.io/en/develop/). Here we provide the sequence of the TRB locus, obtained from <REF>, which, as of October 2nd, 2021 had not yet been deposited in the [IMGT](http://www.imgt.org/IMGTrepertoire/LocusGenes/locusdesc/zebrafish/TRD/Danrer_TRDdesc.html) database.  
+Code and tutorial for the analysis of V(D)J recombination in the zebrafish, using RNA-Seq data and the [MIXCR tool](https://mixcr.readthedocs.io/en/develop/). Here we provide the reference sequence of the zebrafish TRB locus, obtained from [REF], which, as of October 2nd, 2021 had not yet been deposited in the [IMGT](http://www.imgt.org/IMGTrepertoire/LocusGenes/locusdesc/zebrafish/TRD/Danrer_TRDdesc.html) database.  
 
 ## 1. Install MIXCR and add zebrafish TRB sequences  
 
@@ -10,11 +10,11 @@ Code and tutorial for the analysis of V(D)J recombination in the zebrafish, usin
 ```sh
 mixcr -v
 ```
-Navigate to the folder specified in the command line (e.g., `/usr/local/Cellar/mixcr/3.0.13-2/libraries`), and save there the external library containing the TRB sequences we provide.
+Navigate to the folder specified in the command line (e.g., `/usr/local/Cellar/mixcr/3.0.13-2/libraries`), and save there the external library containing the reference TRB sequences.
 
 
 ## 2. Install the R package `vdjveR`  
-`vdjveR` is an R package which contains functions that may help wet lab biologists exploring VDJ diversity after alignment with MIXCR. One of the potentially useful functions is the calculation of equitability scores for the detection of oligoclonality. There are other tools developed by others to further explore VDJ rearrangements, that we list in the end of this page.
+`vdjveR` is an R package which contains functions that may help exploring VDJ diversity after alignment with MIXCR. One of the potentially useful functions is the calculation of equitability scores for the evaluation of the equivalence of the clones within a population.
 > Install `vdjveR` directly from the github repository:
 ```sh
 ```
