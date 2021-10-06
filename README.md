@@ -1,6 +1,6 @@
 # Zebrafish-VDJ-analysis
 
-Code and tutorial for the analysis of V(D)J recombination in the zebrafish, using RNA-Seq data and the [MIXCR tool](https://mixcr.readthedocs.io/en/develop/). Here we provide the reference sequence of the zebrafish TRB locus, obtained from [REF], which, as of October 2nd, 2021 had not yet been deposited in the [IMGT](http://www.imgt.org/IMGTrepertoire/LocusGenes/locusdesc/zebrafish/TRD/Danrer_TRDdesc.html) database.  
+Code and tutorial for the analysis of V(D)J recombination in the zebrafish, using RNA-Seq data and the [MIXCR tool](https://mixcr.readthedocs.io/en/develop/). Here is provided the reference sequence of the zebrafish TRB locus, obtained from [REF], which, as of October 2nd, 2021 had not yet been deposited in the [IMGT](http://www.imgt.org/IMGTrepertoire/LocusGenes/locusdesc/zebrafish/TRD/Danrer_TRDdesc.html) database.  
 
 #### 1. Install MIXCR and add zebrafish TRB sequences  
 
@@ -17,6 +17,7 @@ Navigate to the folder specified in the command line (e.g., `/usr/local/Cellar/m
 `vdjveR` is an R package which contains functions that may help exploring VDJ diversity after alignment with MIXCR. One of the potentially useful functions is the calculation of equitability scores for the evaluation of the equivalence of the clones within a population.
 > Clone `vdjveR` directly from the github repository:
 ```sh
+git clone https://github.com/clarapereira/vdjveR.git
 ```
 
 
@@ -30,6 +31,13 @@ Navigate to the folder specified in the command line (e.g., `/usr/local/Cellar/m
 - export all, with metadata
 - export productive clonotypes only
 - export only productive TCR-B clonotypes
+```sh
+Rscript /path/to/vdjveR/mergeAlignmentFiles.R
+```
 
 #### 7. Calculate Equitatibility
 - plot data
+```sh
+Rscript /path/to/vdjveR/doClonotypicAnalysis.R
+Rscript /path/to/vdjveR/doEquitabilityAnalysis.R
+```
