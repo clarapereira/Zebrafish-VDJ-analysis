@@ -1,6 +1,6 @@
 # Zebrafish-VDJ-analysis (WIP)
 
-Code and tutorial for the analysis of V(D)J recombination in the zebrafish, using RNA-Seq data and the [MIXCR tool](https://mixcr.readthedocs.io/en/develop/). Here is provided the reference sequence of the zebrafish TRB locus, obtained from [REF], which, as of October 2nd, 2021 had not yet been deposited in the [IMGT](http://www.imgt.org/IMGTrepertoire/LocusGenes/locusdesc/zebrafish/TRD/Danrer_TRDdesc.html) database.  
+Code and tutorial for the analysis of V(D)J recombination in the zebrafish, using RNA-Seq data and the [MIXCR tool](https://mixcr.readthedocs.io/en/develop/). Here is provided the reference sequence of the zebrafish TRB locus, obtained from [Meeker et al, 2010](https://pubmed.ncbi.nlm.nih.gov/20054533/), which, as of October 2nd, 2021 had not yet been deposited in the [IMGT](http://www.imgt.org/IMGTrepertoire/LocusGenes/locusdesc/zebrafish/TRD/Danrer_TRDdesc.html) database.  
 
 #### 1. Install MIXCR and add zebrafish TRB sequences  
 
